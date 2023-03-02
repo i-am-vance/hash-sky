@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     ui->comboBox->addItem("sha256");
     ui->comboBox->addItem("sha1");
+    ui->comboBox->addItem("sha512");
 }
 
 MainWindow::~MainWindow()
