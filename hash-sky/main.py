@@ -7,6 +7,9 @@ def hash_sha256():
 def hash_sha1():
     sha1 = hashlib.sha1(text_hash.encode())
     print(sha1.hexdigest())
+def hash_sha512():
+    sha512 = hashlib.sha512(text_hash.encode())
+    print(sha512.hexdigest())
 
 
 hash_algorithm = str (sys.argv[1])
@@ -16,3 +19,5 @@ if hash_algorithm == "sha256" :
     hash_sha256()
 elif hash_algorithm == "sha1" :
     hash_sha1()
+elif hash_algorithm == "sha512" :
+    hash_sha512()
