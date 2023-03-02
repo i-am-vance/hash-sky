@@ -61,16 +61,6 @@
            <property name="cursor">
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
-           <item>
-            <property name="text">
-             <string>sha 256</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>sha 1</string>
-            </property>
-           </item>
           </widget>
          </item>
          <item>
