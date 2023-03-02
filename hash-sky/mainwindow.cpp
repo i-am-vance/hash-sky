@@ -29,5 +29,5 @@ void MainWindow::on_pushButton_clicked()
     p.waitForFinished(-1);
 
     QString p_stdout = p.readAll();
-    ui->lineEdit_output->setText(p_stdout);
+    ui->textEdit_output->setText(p_stdout);
 }

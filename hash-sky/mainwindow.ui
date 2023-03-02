@@ -64,7 +64,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_output"/>
+          <widget class="QTextEdit" name="textEdit_output"/>
          </item>
         </layout>
        </item>
@@ -112,7 +112,6 @@
   <tabstop>lineEdit_input</tabstop>
   <tabstop>comboBox</tabstop>
   <tabstop>pushButton</tabstop>
-  <tabstop>lineEdit_output</tabstop>
  </tabstops>
  <resources/>
  <connections/>
