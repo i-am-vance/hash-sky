@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include <QProcess>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -17,6 +17,17 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    QString text = ui->lineEdit->text();
+    QString text = ui->lineEdit_input->text();
+    QString command = "python3 /home/vance/Documents/projact/hash-sky/hash-sky/main.py ";
+    command += ui->comboBox->currentText();
+    command += " ";
+    command += text;
 
+    QProcess p;
+    QStringList params;
+    p.start(command);
+    p.waitForFinished(-1);
+
+    QString p_stdout = p.readAll();
+    ui->lineEdit_output->setText(p_stdout);
 }

@@ -43,7 +43,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit"/>
+          <widget class="QLineEdit" name="lineEdit_input"/>
          </item>
         </layout>
        </item>
@@ -64,7 +64,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_2"/>
+          <widget class="QLineEdit" name="lineEdit_output"/>
          </item>
         </layout>
        </item>
@@ -109,10 +109,10 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
-  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_input</tabstop>
   <tabstop>comboBox</tabstop>
   <tabstop>pushButton</tabstop>
-  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit_output</tabstop>
  </tabstops>
  <resources/>
  <connections/>
