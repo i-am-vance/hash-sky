@@ -1,6 +1,10 @@
 import sys
 import hashlib
 
+def hash_md5():
+    md5 = hashlib.md5(text_hash.encode())
+    print(md5.hexdigest())
+
 def hash_sha1():
     sha1 = hashlib.sha1(text_hash.encode())
     print(sha1.hexdigest())
@@ -25,7 +29,10 @@ def hash_sha512():
 hash_algorithm = str (sys.argv[1])
 text_hash = str(sys.argv[2])
 
-if hash_algorithm == "sha1" :
+if hash_algorithm == "md5" :
+    hash_md5()
+
+elif hash_algorithm == "sha1" :
     hash_sha1()
 
 elif hash_algorithm == "sha224" :
