@@ -35,3 +35,9 @@ void MainWindow::on_pushButton_clicked()
     QString p_stdout = p.readAll();
     ui->textEdit_output->setText(p_stdout);
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+   ui->textEdit_output->selectAll();
+   ui->textEdit_output->copy();
+}
