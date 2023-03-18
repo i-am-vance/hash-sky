@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->comboBox->addItem("sha384");
     ui->comboBox->addItem("sha512");
     ui->comboBox->addItem("blake2b");
+    ui->comboBox->addItem("sha3_224");
 }
 
 MainWindow::~MainWindow()
