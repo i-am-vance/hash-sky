@@ -29,6 +29,10 @@ def hash_blake2b():
     blake2b = hashlib.blake2b(text_hash.encode())
     print(blake2b.hexdigest())
 
+def hash_sha3_224():
+    sha3_224 = hashlib.sha3_224(text_hash.encode())
+    print(sha3_224.hexdigest())
+
 hash_algorithm = str (sys.argv[1])
 text_hash = str(sys.argv[2])
 
@@ -52,3 +56,6 @@ elif hash_algorithm == "sha512" :
 
 elif hash_algorithm == "blake2b" :
     hash_blake2b()
+
+elif hash_algorithm == "sha3_224" :
+    hash_sha3_224()
